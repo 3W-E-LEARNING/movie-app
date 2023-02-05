@@ -31,8 +31,8 @@ export default function MovieList() {
         {movies.length > 0 ?(
         <Grid container>
             {movies.map((movie)=>
-              <Grid item xs={12} md={4}>
-                <MovieCard key={movie.id} {...movie}/>
+              <Grid item xs={12} md={4} key={movie.id}>
+                <MovieCard {...movie}/>
               </Grid>
               )}
         </Grid>
